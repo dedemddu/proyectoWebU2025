@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.to-top {
+    border: 1px solid;
+    background: linear-gradient(to top, coral, blanchedalmond);
+}
+
+.to-right {
+    border: 1px solid;
+    background: linear-gradient(to right, blanchedalmond, blue);
+}
+.to-left {
+    border: 1px solid;
+    background: linear-gradient(to left, blanchedalmond, blue);
+}
+
+.to-bottom {
+    border: 1px solid;
+    background: linear-gradient(to bottom, blanchedalmond, blue);
+}
+
+.to-deg {
+    border: 1px solid;
+    background: linear-gradient(45deg, red 50%, green 25%);
+}
+
+.radian {
+    border: 1px solid;
+    background: radial-gradient(red, green, orange );
+    width: 120px;
+    height: 120px;
+}
+.radian-percent {
+    border: 1px solid;
+    background: radial-gradient(red 15%, green 20%, orange 25%);
+    width: 120px;
+    height: 120px;
+}

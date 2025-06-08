@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: turquoise;
+    font-size: 5em;
+}
+
+.egresado {
+    padding: 10px;
+    margin: 10px;
+}
+
+#detalle-egresado {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#especializacion{
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    color: blue;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+h2 {
+    color: brown;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+[href = "www.facebook.com"] {
+    color: red;
+}
+[href = "www.instagram.com"] {
+    color: green;
+}
+[href = "www.tiktok.com"] {
+    color: orange;
+}
+
+.cursos {
+    margin: 10px;
+    padding: 10px;
+    background-color: beige;
+}
+
+ul li:nth-child(odd){
+    color: brown;
+}
+
+#detalle-egresado::first-line{
+    color: blue;
+    text-decoration: underline;
+}
+
+p::first-letter {
+    color: brown;
+    font-size: 30px;
+}
+
+.egresado h2 {
+    font-size: 30px;
+    color: blueviolet;
+}
+
+div li {
+    background-color: aqua;
+}

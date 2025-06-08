@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* .titulo {
+ animation-duration: 2s; 
+ animation-name: tituloAnimacion;
+}
+
+@keyframes tituloAnimacion {
+    from {
+        color: yellowgreen;
+        background: blanchedalmond;
+    }
+    to {
+        color: white;
+        background: black;
+    }
+    
+} */
+
+div {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 10px;
+    color: black;
+    line-height: 100px;
+    transition: all 1s ease;
+
+    &.translate{
+        &:hover{
+            transform: translate(100px, 100px);
+        }
+    }
+    &.translatex{
+        &:hover{
+            transform: translatex(300px);
+        }
+    }
+    &.translatey{
+        &:hover{
+            transform: translatey(300px);
+        }
+    }
+    &.scale{
+        &:hover{
+            transform: scale(0.5)
+        }
+    }
+    &.scalex{
+        &:hover{
+            transform: scaleX(2)
+        }
+    }
+    &.scaley{
+        &:hover{
+            transform: scaleY(2)
+        }
+    }
+    &.scaley{
+        &:hover{
+            transform: scaleY(2)
+        }
+    }
+    &.rotate{
+        &:hover{
+            transform: rotate(1turn)
+        }
+    }
+    &.rotatex{
+        &:hover{
+            transform: rotateX(2turn)
+        }
+    }
+    &.rotatey{
+        &:hover{
+            transform: rotateY(45deg)
+        }
+    }
+    &.rotatez{
+        &:hover{
+            transform: rotateZ(1turn)
+        }
+    }
+    &.skew{
+        &:hover{
+            transform: skew(30deg, 30deg)
+        }
+    }
+    &.skewx{
+        &:hover{
+            transform: skewX(45deg)
+        }
+    }
+    &.skewy{
+        &:hover{
+            transform: skewY(45deg)
+        }
+    }
+
+}

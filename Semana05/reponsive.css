@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    font-size: 30px;
+    background: green;
+    font-weight: bold;
+    padding: 10px;
+    margin: 60px;
+}
+
+h2 {
+   text-align: center;
+   font-size: 60px;
+   text-shadow: 
+        10px 10px 10px green,
+        0 10px blue,
+        -100px 0 black; 
+}
+
+.contenedor {
+    display: flex;
+}
+.tarjeta1 {
+     width: 200px;
+     height: 200px;
+   
+     background: coral;
+     border-top-left-radius: 53px;
+     border-bottom-right-radius: 53%;
+     box-shadow: 0px 0px 15px 15px black;
+}
+
+.tarjeta1:hover {
+    background: blanchedalmond;
+}
+
+.tarjeta2 {
+     width: 200px;
+     height: 200px;
+     background: burlywood;
+     border-bottom-left-radius: 53px;
+     border-top-right-radius: 53px;
+     box-shadow: inset 5px 3px red;
+}
+.tarjeta3 {
+     width: 200px;
+     height: 200px;
+     background: yellowgreen;
+     border-top-right-radius: 53px;
+     border-bottom-left-radius: 53px;
+    box-shadow: 
+        10px 10px 10px 10px black,
+        -10px -10px blanchedalmond;
+}
+.tarjeta4 {
+     width: 200px;
+     height: 200px;
+     background: violet;
+     border-bottom-right-radius: 53px;
+     border-top-left-radius: 53px;
+    box-shadow: inset 5px 3px red;
+}
+
+@media screen and (width < 450px){
+/* @media (max-width: 450px){     */
+    .header {
+        background-color:yellow;
+        color: black;
+    }
+    h2 {
+        text-shadow: 0px 10px 10px blue; 
+    }
+
+    .tarjeta1 {
+        background: black;
+        transition-duration: 0.5s;
+        transition-timing-function: none;
+        transition-delay: 0.5s;
+    }
+    .tarjeta2 {
+        background: blue;
+    }
+    .tarjeta3 {
+        background: gray;
+    }
+    .tarjeta4 {
+        background: goldenrod;
+    }
+}
+
