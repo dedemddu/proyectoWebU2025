@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Semana07/oocss/style.css">
+    <title>OOCSS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Tarjetas OOCSS</h1>
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        Tarjeta
+                    </h3>
+                    <span class="badge badge-info">Nuevo</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Esta es una tarejta simple
+                    </p>
+                    <div class="flex-center">
+                        <button class="btn btn-primary">Principal</button>
+                        <button class="btn btn-outline">Secundaria</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-image">
+                <div class="card-image-container">
+                    <div class="card-image-placeholder">
+                        Imagen
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Tarjeta con imagen</h3>
+                    <p class="card-text">
+                        Tarjeta con imagen
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-secondary">Ver Galeria</button>
+                </div>
+            </div>
+
+            <div class="card card-featured">
+                <div class="card-header">
+                    <h3 class="card-title">Tarjeta Premiun</h3>
+                    <span class="badge badge-success">Premiun</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis dolore dolorum delectus quidem quasi reiciendis architecto quas, eaque 
+                    </p>
+                    <div class="text-center">
+                        <button class="btn btn-success">Explora</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tarjeta compacta -->
+            <div class="card card-compact">
+                <div class="card-body">
+                    <h4 class="card-title">Tarjeta Compacta</h4>
+                    <p class="card-text">
+                        tarjeta compacta optimizada
+                    </p>
+                    <div class="flex-between">
+                        <span class="badge badge-warning">Compacto</span>
+                        <button class="btn btn-primary">Ir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones -->
+         <div style="margin-top: 3rem; padding:2rem; background: rgba(255,255,255,0.1); border-radius: 12px; backdrop-filter: blur(10px);">
+            <h2 style="color: white; text-align:center; margin-bottom: 15rem;">Botnes</h2>
+            <div class="flex-center" style="flex-wrap:wrap; gap: 1rem">
+                <button class="btn btn-primary">Primario</button>
+                <button class="btn btn-secondary">Secundario</button>
+                <button class="btn btn-success">Exito</button>
+                <button class="btn btn-outline">Outline</button>
+            </div>
+         </div>
+
+        <div
+            style="margin-top: 3rem; padding:2rem; background: rgba(255,255,255,0.1); border-radius:12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: #2d3748; margin-bottom: 1rem">OOCSS</h3>
+            <ul style="color: #4a5568; line-height: 1.8;">
+                <li><strong>Separación de estructura y presentación</strong></li>
+                <li><strong>Separación del contenedor y Contenido</strong></li>
+                <li><strong>Reutilización</strong></li>
+                <li><strong>Escalabilidad</strong></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
