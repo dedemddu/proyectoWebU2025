@@ -8,14 +8,13 @@ const main = async ()=> {
     } catch (error) {
         console.log(error);
     }   
-
 }
 
 const Card = (usuario)=> {
     const {first_name, last_name, email} = usuario;
     const div = document.createElement('div');
     div.innerHTML = `
-        <div>
+        <div class="user-card">
             <p><strong>Nombre:</strong> ${first_name}</p>
             <p><strong>Apellidos:</strong> ${last_name}</p>
             <p><strong>Email:</strong> ${email}</p>
