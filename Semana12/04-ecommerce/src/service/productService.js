@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const URL = 'https://669579174bd61d8314cb63e8.mockapi.io'
+const URL = import.meta.env.VITE_ENDPOINT_BASE;
 
 const obtenerProductos = async () => {
     try {
         const respuesta = await axios.get(`${URL}/productos`);        
-        console.log(respuesta.data);
+        //console.log(respuesta.data);
         if (respuesta.status === 200) {
             return respuesta.data;
         }
@@ -19,7 +19,7 @@ const obtenerProductos = async () => {
 const nuevoProducto = async (producto)=>{
     try {
         const respuesta = await axios.post(`${URL}/productos`, producto);
-        console.log(respuesta);
+        //console.log(respuesta);
     } catch (error) {
         console.error(error);
         throw error;

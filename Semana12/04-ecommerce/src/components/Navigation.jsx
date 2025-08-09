@@ -7,19 +7,11 @@ const Navigation = ()=> {
           <Navbar.Brand >
                 Opciones
           </Navbar.Brand>
-          <Navbar.Toggle aria-control="basic-navbar-nav" />
+          <Navbar.Toggle aria-control="basic-navbar-nav"/>
           <Navbar.Collapse id='basic-navbar-nav' >
             <Nav className='me-auto'>
-              <Nav.Link>
-                <Link to="/" className='nav-link'>
-                  Lista de Productos
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/createproduct" className='nav-link'>
-                  Nuevo producto
-                </Link>
-              </Nav.Link>
+                <Link to="/" className='nav-link'>Lista de Productos</Link>
+                <Link to="/createproduct" className='nav-link'>Nuevo producto</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

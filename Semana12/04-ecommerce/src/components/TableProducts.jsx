@@ -1,3 +1,4 @@
+import CircleColor from "./CircleColor"
 const TableProducts= ({productos}) => {
     return (
         <>
@@ -19,7 +20,7 @@ const TableProducts= ({productos}) => {
                             <td>{descripcion}</td>
                             <td>{marca}</td>
                             <td>{precio}</td>
-                            <td>{color}</td>
+                            <td> <CircleColor color = {color} /></td>
                             <td>
                                 <button>Editar</button>
                                 <button>Eliminar</button>

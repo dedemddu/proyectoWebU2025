@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { nuevoProducto } from "../service/productService";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const CreateProductView = () => {
     const [values, setValues] = useState({
@@ -11,6 +12,8 @@ const CreateProductView = () => {
         foto: "https://prueba.com/foto1",
         color: 'ffffff'
     })
+
+    const navigate = useNavigate();
 
     const handleValues = (ev) => {
         console.log(ev.target.name)
@@ -27,14 +30,14 @@ const CreateProductView = () => {
     const handleSubmit = async (ev) => {
         ev.preventDefault();
         const resultado = await nuevoProducto(values);
-        console.log(resultado);
-        // alert("Producto Creado");
+        console.log(resultado);        
         Swal.fire({
             title:"Producto creado!",
             text: `${values.nombre} se guardó correctamente`,
             icon: 'success',
             confirmButtonText:'Ok'
         })
+        navigate("/");
     }
 
     return (
