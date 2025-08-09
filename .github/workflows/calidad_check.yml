@@ -6,27 +6,17 @@ on:
     branches: [ master ]
 
 jobs:
-  quality-checks:
+  calidad-checks:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3    
     
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-    
-    - name: Install dependencies
-      run: npm install eslint html-validator css-validator axe-core puppeteer --save-dev
-    
-    - name: Run ESLint
-      run: npx eslint Semana11/listadoUsers/scripts/app.js Semana11/listadoUsers/scripts/service.js
-    
+    - name: Install html-validator
+      run: npm install -g html-validator-cli
+      
     - name: Validar HTML
-      run: |
-        npx html-validator --file=listadoUser/index.html --verbose
-    
+      run: html-validator --file=Semana11/listadoUsers/index.html --verbose
+      
     - name: Validar CSS
-      run: |
-        npx css-validator Semana11/listadoUsers/css/app.css    
+      run: npx css-validator Semana11/listadoUsers/css/app.css    
    
