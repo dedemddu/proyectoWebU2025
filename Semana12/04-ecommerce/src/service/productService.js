@@ -11,7 +11,7 @@ const obtenerProductos = async () => {
         }
         throw new Error ("Error al obtener la data");
     } catch (error) {
-        console.error(error);
+        
         throw error;
     }
 }
@@ -19,7 +19,7 @@ const obtenerProductos = async () => {
 const nuevoProducto = async (producto)=>{
     try {
         const respuesta = await axios.post(`${URL}/productos`, producto);
-        //console.log(respuesta);
+        console.log(respuesta);
     } catch (error) {
         console.error(error);
         throw error;

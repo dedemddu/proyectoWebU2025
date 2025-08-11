@@ -140,10 +140,3 @@ const CreateProductView = () => {
 }
 
 export default CreateProductView
-
-
-// <th></th>
-//<th>Descripción</th>
-// <th>Marca</th>
-//<th>Precio</th>
-//<th>Color</th>

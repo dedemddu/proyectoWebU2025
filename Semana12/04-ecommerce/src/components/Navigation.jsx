@@ -7,7 +7,7 @@ const Navigation = ()=> {
           <Navbar.Brand >
                 Opciones
           </Navbar.Brand>
-          <Navbar.Toggle aria-control="basic-navbar-nav"/>
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id='basic-navbar-nav' >
             <Nav className='me-auto'>
                 <Link to="/" className='nav-link'>Lista de Productos</Link>

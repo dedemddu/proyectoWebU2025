@@ -9,16 +9,17 @@ const ListProductView = () => {
         try {
             const getProductos = async () => {
                 const productos = await obtenerProductos();
-                setProductos(productos)
+                setProductos(productos);
             }
             getProductos();
         } catch (error) {
+            console.log("Error")
             throw error;
         }
-    })
+    },[])
     return (
-        <div className="container">
-            <h3>Lista de Productos</h3>
+        <div className="container py-3">
+            <h3 className="mb-4">Lista de Productos</h3>
             <TableProducts productos={productos}/>
         </div>
     )

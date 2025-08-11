@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import ListProductView from "./views/ListProductView";
 import Navigation from './components/Navigation';
-import CreateProductView from './components/CreateProductView';
+import CreateProductView from './views/CreateProductView';
 
 const App = () => {
   return (
